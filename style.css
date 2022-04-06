@@ -1,0 +1,13 @@
+button{
+    outline: none;
+    height: 40px;
+    width: 100px;
+    background-color: hsl(156, 52%, 38%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 50px;
+}
+.tm-gallery-price{
+    margin-bottom: unset ;
+}
