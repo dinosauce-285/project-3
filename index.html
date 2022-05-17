@@ -31,11 +31,11 @@ https://templatemo.com/tm-539-simple-house
 						<div class="col-md-6 col-12" id="banner">
 
 							<div class="tm-site-text-box">
-								
+
 							</div>
 						</div>
 						<nav class="col-md-6 col-12 tm-nav">
-					
+
 							</ul>
 						</nav>
 					</div>
@@ -43,7 +43,7 @@ https://templatemo.com/tm-539-simple-house
 			</div>
 		</div>
 
-		<main class="main">
+		<main class="main" id="main">
 			<header class="row tm-welcome-section">
 				<h2 class="col-12 text-center tm-section-title">Welcome to Simple House</h2>
 				<p class="col-12 text-center">Total 3 HTML pages are included in this template. Header image has a
@@ -338,20 +338,29 @@ https://templatemo.com/tm-539-simple-house
 			});
 		});
 	</script>
-	<script src="app.js"></script>
+<div class="father" id="container">
+	<div class="login" id="loginBox">
+        <h3 class="log-in-text">Log In</h3>
+        <h4 id="toRegis" class="regis-tag" href="">New users? Create account </h4>
+        <input placeholder="Username" type="text">
+        <input placeholder="Password" type="password">
+        <button class="log-in-btn">Log In </button>
 
-	<div class="father">
+    </div>;
+</div>
+<div class="signUp " id="container2">
+	<div class="login" id="loginBox">
+        <h3 class="log-in-text">Sign Up</h3>
+ 
+        <input id="createUserName" placeholder="Username" type="text">
+        <input id="createPassword" placeholder="Password" type="password">
+        <button id="signUpBtn" class="log-in-btn" >Sign Up  </button>
 
-		<div class="login">
-           <h3 class="log-in-text">Log In</h3>
-		   <a class="regis-tag" href="">New users? Create account</a>
-		   <input placeholder="Username" type="text">
-		   <input placeholder="Password" type="password">
-		   <button class="log-in-btn">Log In </button>
+    </div>;
+</div>
+	
+	<script src="app.js"></script>    
 
-		</div>
-
-	</div>
-</body>
+	
 
 </html>
