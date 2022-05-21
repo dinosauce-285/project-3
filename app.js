@@ -85,3 +85,10 @@ async function showPic() {
 container.innerHTML = `<img src="${picLink.image}" alt="">`
 }
 showPic()
+let add = document.querySelectorAll(".add-btn");
+function addCart() {
+  
+}
+for (let i = 0; i < add.length; i++) {
+  add[i].onclick = addCart;
+}

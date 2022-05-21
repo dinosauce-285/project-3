@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
-.buy-btn {
+.buy-btn, .add-btn {
   outline: none;
   height: 40px;
   width: 100px;
@@ -19,7 +19,7 @@ body{
   margin-bottom: 50px;
   transition: 0.5s;
 }
-.buy-btn:hover {
+.buy-btn:hover, .add-btn:hover{
 background-color: white;
 border: solid 1px #2F956D;
 color: #2F956D;
@@ -127,7 +127,7 @@ overflow: hidden ;
 }
 .pic img{
   height: auto;
-  width: 91.5%;
+  width: 91.6%;
 }
 .title{
   margin-top: 50px;
@@ -136,6 +136,7 @@ overflow: hidden ;
   margin-top: -70px
 }
 .nav{
+  padding-top: 100px;
   display: flex;
   flex-direction: row;
 
