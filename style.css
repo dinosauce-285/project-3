@@ -17,6 +17,12 @@ body{
   border-radius: 5px;
   color: white;
   margin-bottom: 50px;
+  transition: 0.5s;
+}
+.buy-btn:hover {
+background-color: white;
+border: solid 1px #2F956D;
+color: #2F956D;
 }
 .tm-gallery-price {
   margin-bottom: unset;
@@ -65,8 +71,10 @@ position: relative;
     font-size: 0.8em;
     color: black;
     cursor: pointer;
+transition: 0.5s ease-in;
     
 }
+
 input{
     margin: 10px;
     height: 50px;
@@ -88,4 +96,55 @@ input{
     border-radius: 15px;
     background: #2F956D;
     font-size: 1em;
+    color: white;
+    transition: 0.5s;
+}
+.log-in-btn:hover {
+  background-color: white;
+  border: solid 1px #2F956D;
+  color: #2F956D;
+}
+.wrong, .lack{
+  color: red;
+position: absolute;
+z-index: 1;
+top: 28%;
+font-size: 14px;
+}
+.pics:hover{
+transform:scale(1.05) ;
+
+transition: 0.5s ;
+}
+.pic{
+  height: 500px
+  ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -4.5%;
+overflow: hidden ;
+}
+.pic img{
+  height: auto;
+  width: 91.5%;
+}
+.title{
+  margin-top: 50px;
+}
+.map{
+  margin-top: -70px
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+
+}.navbaby{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.tm-nav-link.active, .tm-nav-link:hover {
+  border-bottom: 1px solid black;
 }
