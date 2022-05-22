@@ -86,9 +86,32 @@ container.innerHTML = `<img src="${picLink.image}" alt="">`
 }
 showPic()
 let add = document.querySelectorAll(".add-btn");
-function addCart() {
-  
+console.log(add);
+
+
+let sample = document.getElementById('product')
+let product1 = {
+  name: 'Fusce dictum finibus',
+  price : 44,
+  pic: 'https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/01.jpg'
 }
-for (let i = 0; i < add.length; i++) {
-  add[i].onclick = addCart;
+let product2 = {
+  name: 'Aliquam sagittis',
+  price : 44,
+  pic: 'https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/02.jpg'
 }
+function addCart1() {
+    
+ localStorage.setItem('product1', JSON.stringify(product1))
+   
+    
+  }
+  add[0].onclick = addCart1
+  function addCart2() {
+    
+    localStorage.setItem('product2', JSON.stringify(product2))
+      
+       
+     }
+     add[1].onclick = addCart2
+
