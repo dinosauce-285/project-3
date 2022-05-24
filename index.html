@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
 	<link href="css/templatemo-style.css" rel="stylesheet" />
 	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <!--
 
@@ -33,7 +34,7 @@ https://templatemo.com/tm-539-simple-house
 		<main class="main" id="main">
 			<div class="nav">
 				<li class="tm-nav-li"><a href="cart.html" class="tm-nav-link active navbaby">Cart</a></li>
-
+			<button id="log"> Login</button>
 			</div>
 			<header class="row tm-welcome-section">
 				<h2 class="col-12 text-center tm-section-title title">Welcome to Simple House</h2>
@@ -371,19 +372,20 @@ https://templatemo.com/tm-539-simple-house
         <input placeholder="Username" id="insertUsername" type="text" required>
         <input placeholder="Password" id="insertPassword" type="password" required>
         <button class="log-in-btn" id="logInBtn">Log In </button>
-
+        <button id="close-login" ><i class="bx bxs-x-circle"></i></button>
     </div>
 </div>
 <div class="signUp " id="container2">
 	<div class="login" id="loginBox">
+		
         <h3 class="log-in-text">Sign Up</h3>
- 
+		<div id="wrong2" class="wrong2"></div>
         <input id="createUserName" placeholder="Username" type="text" required>
         <input id="createPassword" placeholder="Password" type="password" required>
 		<input  id="address" placeholder="Address" type="text" required>
 		<input  id="phoneNumber" placeholder="Phone Number (+84)" type="number" required>
         <button id="signUpBtn" class="log-in-btn" >Sign Up  </button>
-     
+		<button id="close-regis" ><i class="bx bxs-x-circle"></i></button>
 
     </div>
 </div>

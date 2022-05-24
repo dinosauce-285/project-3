@@ -117,17 +117,23 @@ transform:scale(1.05) ;
 transition: 0.5s ;
 }
 .pic{
-  height: 500px
-  ;
+height: 500px;
+
+width: 91.6%;
+margin-left: 55px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: -4.5%;
+
 overflow: hidden ;
 }
 .pic img{
-  height: auto;
-  width: 91.6%;
+ 
+
+ height: max-content;
+ width: 100%;
+ position: inherit;
 }
 .title{
   margin-top: 50px;
@@ -148,4 +154,32 @@ overflow: hidden ;
 }
 .tm-nav-link.active, .tm-nav-link:hover {
   border-bottom: 1px solid black;
+}
+#log{
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+#close-login, #close-regis{
+  outline: none;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+.wrong2 {
+  color: red;
+  position: absolute;
+  z-index: 1;
+  top: 14%;
+  font-size: 14px;
+ 
 }

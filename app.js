@@ -1,4 +1,5 @@
-let buy = document.querySelectorAll(".buy-btn");
+let buy = document.getElementById("log");
+console.log(buy);
 let main = document.getElementById("main");
 let container = document.getElementById("container");
 let container2 = document.getElementById("container2");
@@ -8,9 +9,9 @@ function clickToLogin() {
   container.style.visibility = "unset";
   container.style.opacity = "0.9";
 }
-for (let i = 0; i < buy.length; i++) {
-  buy[i].onclick = clickToLogin;
-}
+
+  buy.onclick = clickToLogin;
+
 let regisBtn = document.getElementById("toRegis");
 function createAccount() {
   main.style.opacity = "0.3";
@@ -43,11 +44,18 @@ function regisAccountList() {
   accountContainer.push(account);
   let stringInfor = JSON.stringify(accountContainer);
   localStorage.setItem("users", stringInfor);
-  main.style.opacity = "1";
+ 
+  if (newUserName.value != '' && newPassword.value!= '' &&  address.value != '' && phoneNum.value != '') {
+     main.style.opacity = "1";
   container2.style.visibility = "hidden";
   container2.style.opacity = "0";
   container.style.visibility = "hidden";
   container.style.opacity = "0";
+  }
+  else{
+    let wrong2 = document.getElementById('wrong2')
+    wrong2.innerHTML = `<div>Hãy nhập đầy đủ thông tin</div>`
+  }
 }
 
 signUpBtn.onclick = regisAccountList;
@@ -86,7 +94,7 @@ container.innerHTML = `<img src="${picLink.image}" alt="">`
 }
 showPic()
 let add = document.querySelectorAll(".add-btn");
-console.log(add);
+
 
 
 let sample = document.getElementById('product')
@@ -114,4 +122,19 @@ function addCart1() {
        
      }
      add[1].onclick = addCart2
+let closeLoginBtn = document.getElementById('close-login')
+function closeLogin() {
+  container.style.opacity = '0'
+  container.style.visibility ='hidden'
+  main.style.opacity = '1'
 
+}
+closeLoginBtn.onclick = closeLogin
+let closeRegisBtn = document.getElementById('close-regis')
+function closeRegis() {
+  container2.style.opacity = '0'
+  container2.style.visibility ='hidden'
+  main.style.opacity = '1'
+
+}
+closeRegisBtn.onclick = closeRegis
