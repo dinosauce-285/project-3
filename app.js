@@ -43,19 +43,21 @@ function regisAccountList() {
   }
   accountContainer.push(account);
   let stringInfor = JSON.stringify(accountContainer);
-  localStorage.setItem("users", stringInfor);
+
  
   if (newUserName.value != '' && newPassword.value!= '' &&  address.value != '' && phoneNum.value != '') {
      main.style.opacity = "1";
   container2.style.visibility = "hidden";
   container2.style.opacity = "0";
   container.style.visibility = "hidden";
-  container.style.opacity = "0";
+  container.style.opacity = "0"; 
+   localStorage.setItem("users", stringInfor);
   }
   else{
     let wrong2 = document.getElementById('wrong2')
     wrong2.innerHTML = `<div>Hãy nhập đầy đủ thông tin</div>`
   }
+  
 }
 
 signUpBtn.onclick = regisAccountList;
