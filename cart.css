@@ -1,92 +1,131 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
+.container {
+  background: white;
+  height: 100%;
+  width: 100%;
+  margin: 55px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container h1 {
+  margin-top: 50px;
+}
+.father {
+  background: #ccc;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.product1Container,
+.product2Container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+}
+img {
+  width: 100px;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.sort {
+  display: flex;
+  flex-direction: row;
+  column-rule: white;
+  font-size: 20px;
+  background: #2f956d;
+  color: white;
 
-.container{
-    background: white;
-    height: 100%;
-    width: 100%;
-    margin: 55px;
-    display: flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 100px;
+  width: 80%;
+  justify-content: space-around;
+  padding: 10px;
+}
+.remove {
+  outline: none;
+  background: transparent;
+  border: none;
+  position: absolute;
 
-
-}
-.container h1{
-    margin-top: 50px;
-}
-.father{
-background: #ccc;
-height: 100vh;
-width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-}
-.product1Container, .product2Container{
-
-    
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    justify-content: space-around;
-}    
- img{
-width: 100px;
-  
-}
-.name{    
-    font-size: 20px;
-    font-weight: bold;
-}
-.price{
-    font-size: 20px;
-    font-weight: bold;
-
-}
-.sort{
-    display: flex;
-    flex-direction: row;
-    column-rule: white;
-    font-size: 20px;
-    background:#2F956D ;
-    color: white;
-
-    margin-top: 100px;
-     width: 80%;
-     justify-content: space-around;
-     padding: 10px;
-    
-}
-.remove{
-    outline: none;
-    background: transparent;
-    border: none;
-    position: absolute;
-    
-    font-size: 24px;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
 }
 #remove1 {
-    top: 230px;
-    right: 180px;
+  top: 230px;
+  right: 180px;
 }
-#remove2{
-    top: 355px;
-    right: 180px;
+#remove2 {
+  top: 355px;
+  right: 180px;
+}
+.click-buy {
+  position: absolute;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  background: #2f956d;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  bottom: 70px;
+  color: white;
+  transition: 0.5s;
+}
+.click-buy:hover {
+  background: transparent;
+  color: #2f956d;
+  border: 1px solid #2f956d;
+}
+#notiPage {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: white;
+  z-index: 1;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.noti {
+  height: 40%;
+  width: fit-content;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.noti h1 {
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 }

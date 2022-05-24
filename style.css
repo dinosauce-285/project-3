@@ -1,14 +1,14 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
-.buy-btn, .add-btn {
+.buy-btn,
+.add-btn {
   outline: none;
   height: 40px;
   width: 100px;
@@ -19,10 +19,11 @@ body{
   margin-bottom: 50px;
   transition: 0.5s;
 }
-.buy-btn:hover, .add-btn:hover{
-background-color: white;
-border: solid 1px #2F956D;
-color: #2F956D;
+.buy-btn:hover,
+.add-btn:hover {
+  background-color: white;
+  border: solid 1px #2f956d;
+  color: #2f956d;
 }
 .tm-gallery-price {
   margin-bottom: unset;
@@ -36,9 +37,9 @@ color: #2F956D;
 .login {
   height: fit-content;
   width: 35%;
-position: relative;
+  position: relative;
   background: white;
-  font-size: 1.5em ;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +47,8 @@ position: relative;
   z-index: 1;
   opacity: 1;
 }
-.father, .signUp {
+.father,
+.signUp {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -57,105 +59,101 @@ position: relative;
   top: 0;
   right: 0;
   background-color: rgb(229, 226, 226);
-  opacity: 0 ;
+  opacity: 0;
   visibility: hidden;
   z-index: 1;
-
 }
 
-.log-in-text{
-    font-size: 1.5em;
-    margin: 10px 0px 10px 0px;
+.log-in-text {
+  font-size: 1.5em;
+  margin: 10px 0px 10px 0px;
 }
-.regis-tag{
-    font-size: 0.8em;
-    color: black;
-    cursor: pointer;
-transition: 0.5s ease-in;
-    
+.regis-tag {
+  font-size: 0.8em;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s ease-in;
 }
 
-input{
-    margin: 10px;
-    height: 50px;
-    width: 70%;
-    outline: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 0.7em;
-    padding-left: 5px;
-    transition: 0.5s;
+input {
+  margin: 10px;
+  height: 50px;
+  width: 70%;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 0.7em;
+  padding-left: 5px;
+  transition: 0.5s;
 }
-.log-in-btn{
-    width: 70%;
-    margin: 10px 0px 20px 0px;
-    outline: none;
-    border: none;
-    height: 40px;
-    border-radius: 15px;
-    background: #2F956D;
-    font-size: 1em;
-    color: white;
-    transition: 0.5s;
+.log-in-btn {
+  width: 70%;
+  margin: 10px 0px 20px 0px;
+  outline: none;
+  border: none;
+  height: 40px;
+  border-radius: 15px;
+  background: #2f956d;
+  font-size: 1em;
+  color: white;
+  transition: 0.5s;
 }
 .log-in-btn:hover {
   background-color: white;
-  border: solid 1px #2F956D;
-  color: #2F956D;
+  border: solid 1px #2f956d;
+  color: #2f956d;
 }
-.wrong, .lack{
+.wrong,
+.lack {
   color: red;
-position: absolute;
-z-index: 1;
-top: 28%;
-font-size: 14px;
+  position: absolute;
+  z-index: 1;
+  top: 28%;
+  font-size: 14px;
 }
-.pics:hover{
-transform:scale(1.05) ;
-
-transition: 0.5s ;
+.pics:hover {
+  transform: scale(1.05);
 }
-.pic{
-height: 500px;
+.pic {
+  transition: 0.5s;
+  height: 500px;
 
-width: 91.6%;
-margin-left: 55px;
+  width: 91.6%;
+  margin-left: 55px;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
 
-overflow: hidden ;
+  overflow: hidden;
 }
-.pic img{
- 
-
- height: max-content;
- width: 100%;
- position: inherit;
+.pic img {
+  height: max-content;
+  width: 100%;
+  position: inherit;
 }
-.title{
+.title {
   margin-top: 50px;
 }
-.map{
-  margin-top: -70px
+.map {
+  margin-top: -70px;
 }
-.nav{
+.nav {
   padding-top: 100px;
   display: flex;
   flex-direction: row;
-
-}.navbaby{
+}
+.navbaby {
   color: black;
   font-size: 20px;
   font-weight: bold;
-
 }
-.tm-nav-link.active, .tm-nav-link:hover {
+.tm-nav-link.active,
+.tm-nav-link:hover {
   border-bottom: 1px solid black;
 }
-#log{
+#log {
   border: none;
   outline: none;
   background-color: white;
@@ -165,7 +163,8 @@ overflow: hidden ;
   padding-bottom: 10px;
   cursor: pointer;
 }
-#close-login, #close-regis{
+#close-login,
+#close-regis {
   outline: none;
   background: transparent;
   border: none;
@@ -181,5 +180,4 @@ overflow: hidden ;
   z-index: 1;
   top: 14%;
   font-size: 14px;
- 
 }

@@ -1,5 +1,5 @@
 let buy = document.getElementById("log");
-console.log(buy);
+
 let main = document.getElementById("main");
 let container = document.getElementById("container");
 let container2 = document.getElementById("container2");
@@ -100,7 +100,7 @@ let add = document.querySelectorAll(".add-btn");
 let sample = document.getElementById('product')
 let product1 = {
   name: 'Fusce dictum finibus',
-  price : 44,
+  price : 100,
   pic: 'https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/01.jpg'
 }
 let product2 = {

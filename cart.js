@@ -2,6 +2,7 @@ let remove1 = document.getElementById("remove1");
 let remove2 = document.getElementById("remove2");
 let container1 = document.getElementById("product1Container");
 let container2 = document.getElementById("product2Container");
+
 function getItem1() {
   let one = JSON.parse(localStorage.getItem("product1"));
   if (one == null) {
@@ -68,3 +69,30 @@ function deleteItem2() {
   remove2.style.visibility = "hidden";
 }
 remove2.onclick = deleteItem2;
+let buy = document.getElementById('clickBuy')
+
+
+function clickToBuy() {
+  let one = JSON.parse(localStorage.getItem("product1"));
+if (one == null) {
+  one = {
+   price: 0
+ }
+
+}
+let two = JSON.parse(localStorage.getItem("product2"));
+if (two == null) {
+two = {
+  price: 0
+}
+}
+console.log(one);
+  let notiPage = document.getElementById('notiPage')
+  notiPage.innerHTML =` <div class="noti">
+  <h1>Đơn hàng trị giá ${one.price + two.price}.000vnđ của  sẽ được chuyển đi tới  </h1>
+  <h1>Thanks for purchasing!!!!</h1>
+</div>`
+notiPage.style.opacity = "1";
+  notiPage.style.visibility = "visible";
+}
+buy.onclick = clickToBuy
